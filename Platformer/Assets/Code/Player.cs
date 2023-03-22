@@ -39,6 +39,18 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnColliderEnter2D(Collider2D other) {
+        if (other.CompareTag("Ice")){
+            speed = 8;
+        }
+        else if (other.CompareTag("Mud")){
+            speed = 3;
+        }
+        else{
+            speed = 5;
+        }
+    }
+
     void FixedUpdate()
     {
         float xSpeed = Input.GetAxis("Horizontal") * speed;

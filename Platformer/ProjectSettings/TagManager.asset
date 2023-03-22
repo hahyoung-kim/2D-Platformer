@@ -9,6 +9,8 @@ TagManager:
   - Ground
   - Kill
   - FireBall
+  - Mud
+  - Ice
   layers:
   - Default
   - TransparentFX
