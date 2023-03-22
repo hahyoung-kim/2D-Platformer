@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
-    float spd;
+    public float spd = 0.015f;
     Rigidbody2D _rigidbody2D;
     public GameObject player;
     public float startPos;
@@ -14,9 +14,11 @@ public class MovingPlatform : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spd = .02f;
+        if (spd == 0) {
+            spd = 0.015f;
+        }
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        //StartCoroutine(moveY());
+        StartCoroutine(moveY());
     }
 
     IEnumerator moveY() {
@@ -26,7 +28,7 @@ public class MovingPlatform : MonoBehaviour
             }
             print(transform.position.y + (dir * spd));
             transform.position = new Vector2(transform.position.x, transform.position.y + (dir * spd));
-            yield return new WaitForSeconds(.025f);
+            yield return new WaitForSeconds(.005f);
         }
         
     }
@@ -52,10 +54,10 @@ public class MovingPlatform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y <= endPos || transform.position.y >= startPos) {
-            dir *= -1;
-        }
-        transform.position = new Vector2(transform.position.x, transform.position.y + (dir * spd));
+        // if (transform.position.y <= endPos || transform.position.y >= startPos) {
+        //     dir *= -1;
+        // }
+        // transform.position = new Vector2(transform.position.x, transform.position.y + (dir * spd));
         
     }
 }
