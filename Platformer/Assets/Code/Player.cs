@@ -4,15 +4,34 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int speed = 5;
+    public int jumpForce = 500;
+    private Rigidbody2D _rigidbody;
+
+    public LayerMask whatIsGround;
+    public Transform feet;
+    bool grounded = false;
+
+
     void Start()
     {
-        
+        _rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    void FixedUpdate()
+    {
+        float xSpeed = Input.GetAxis("Horizontal") * speed;
+        _rigidbody.velocity = new Vector2(xSpeed,_rigidbody.velocity.y);
+    }
+
     void Update()
     {
-        
+        grounded = Physics2D.OverlapCircle(feet.position, .3f, whatIsGround);
+        if(Input.GetButtonDown("Jump") && grounded)
+        {
+            _rigidbody.AddForce(new Vector2(0, jumpForce));
+        }
+
+
     }
 }
