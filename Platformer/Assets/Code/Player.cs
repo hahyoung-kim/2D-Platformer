@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public int speed = 5;
-    public int jumpForce = 500;
+    public int jumpForce = 650;
     private Rigidbody2D _rigidbody;
 
     public LayerMask whatIsGround;
@@ -31,7 +31,5 @@ public class Player : MonoBehaviour
         {
             _rigidbody.AddForce(new Vector2(0, jumpForce));
         }
-
-
     }
 }
