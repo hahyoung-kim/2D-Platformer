@@ -65,6 +65,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3652043185389750730}
+  - {fileID: 1655330488205063255}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -182,6 +183,9 @@ MonoBehaviour:
   speed: 5
   jumpForce: 650
   hurtSound: {fileID: 8300000, guid: f720803e3ba5dac4983b1f27c43759fd, type: 3}
+  shootSound: {fileID: 8300000, guid: 5c3c1ecb2c7eb464a9ac9d5b5ceb75f8, type: 3}
+  bulletPrefab: {fileID: 8450655904411873518, guid: 59618d9b6a66f9748b8abbc96fc92ff0, type: 3}
+  spawnPoint: {fileID: 1655330488205063255}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 1
@@ -282,3 +286,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &5735992562992439474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1655330488205063255}
+  m_Layer: 0
+  m_Name: ShootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1655330488205063255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5735992562992439474}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.443, y: -0.213, z: -0.5903989}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3652043186540994435}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

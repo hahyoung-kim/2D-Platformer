@@ -25,7 +25,6 @@ public class MovingPlatform : MonoBehaviour
             if (transform.position.y <= endPos || transform.position.y >= startPos) {
             dir *= -1;
             }
-            print(transform.position.y + (dir * spd));
             transform.position = new Vector2(transform.position.x, transform.position.y + (dir * spd));
             yield return new WaitForSeconds(.005f);
         }
