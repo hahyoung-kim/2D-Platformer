@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class Player : MonoBehaviour
     AudioSource _audioSource;
     public GameObject bulletPrefab;
     public Transform spawnPoint;
+    public string nextLvl = "Level2";
+    public AudioClip goalSound;
 
     public LayerMask whatIsGround;
     public Transform feet;
@@ -40,6 +43,11 @@ public class Player : MonoBehaviour
             _audioSource.PlayOneShot(hurtSound);
             //_gameManager.loseLife(1);
             StartCoroutine(FlashRed());
+        }
+        else if (other.gameObject.CompareTag("Goal"))
+        {
+            _audioSource.PlayOneShot(goalSound);
+            SceneManager.LoadScene(nextLvl);
         }
     }
 

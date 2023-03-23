@@ -131,7 +131,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.027868748, y: -0.010494709}
@@ -186,6 +186,8 @@ MonoBehaviour:
   shootSound: {fileID: 8300000, guid: 5c3c1ecb2c7eb464a9ac9d5b5ceb75f8, type: 3}
   bulletPrefab: {fileID: 8450655904411873518, guid: 59618d9b6a66f9748b8abbc96fc92ff0, type: 3}
   spawnPoint: {fileID: 1655330488205063255}
+  levelToLoad: 
+  goalSound: {fileID: 8300000, guid: 726ab82aaeee47942a1e332182c80c53, type: 3}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 1
