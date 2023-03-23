@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
 
     public void loseLife(int points){
         lives -= points;
+        print("lives: " + lives);
         // scoreUI.text = "score: " + score;
         // livesUI.text = "lives: " + lives;
 
