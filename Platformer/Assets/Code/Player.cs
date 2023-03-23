@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Enemy")) {
             _audioSource.PlayOneShot(hurtSound);
-            //_gameManager.loseLife(1);
+            _gameManager.loseLife(1);
             StartCoroutine(FlashRed());
         }
         else if (other.gameObject.CompareTag("Goal"))
