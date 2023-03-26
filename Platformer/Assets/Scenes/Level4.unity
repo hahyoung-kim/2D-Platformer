@@ -12688,7 +12688,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374282870}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100.5202, y: -20.3372, z: 0}
+  m_LocalPosition: {x: 100.5202, y: -23.8, z: 0}
   m_LocalScale: {x: 91.089035, y: 1.4118015, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15124,7 +15124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1301103811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16147,8 +16147,8 @@ MonoBehaviour:
   lives: 200
   currLvl: Level4
   gameOverLevel: Level4
-  black: {fileID: 0}
-  animator: {fileID: 0}
+  black: {fileID: 1733328909}
+  animator: {fileID: 1733328908}
 --- !u!1001 &1555980120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16424,7 +16424,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633967245}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.75, y: -0.71, z: 0}
+  m_LocalPosition: {x: -1.75, y: -1.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

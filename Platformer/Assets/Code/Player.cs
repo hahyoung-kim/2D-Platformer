@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
             StartCoroutine(FlashRed());
         }
         else if (other.CompareTag("Kill")){
-            _gameManager.loseLife(3);
+            _gameManager.loseLife(_gameManager.GetLives()); // lose all lives
         }
         else if (other.gameObject.CompareTag("Goal"))
         {

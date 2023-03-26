@@ -13,7 +13,7 @@ public class Snowman : MonoBehaviour
     AudioSource _audioSource;
     public GameObject bulletPrefab;
     public Transform spawnPoint;
-    int bulletSpd = 500;
+    int bulletSpd = 300;
     public AudioClip shootSound;
     public AudioClip hitSound;
     SpriteRenderer _renderer;
@@ -32,7 +32,7 @@ public class Snowman : MonoBehaviour
             GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
             newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(-bulletSpd, 0));
             _audioSource.PlayOneShot(shootSound);
-            yield return new WaitForSeconds(Random.Range(.3f,1));
+            yield return new WaitForSeconds(Random.Range(.7f,1));
         }
     }
 
