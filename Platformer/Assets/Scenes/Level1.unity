@@ -245,6 +245,7 @@ GameObject:
   - component: {fileID: 218342661}
   - component: {fileID: 218342663}
   - component: {fileID: 218342662}
+  - component: {fileID: 218342664}
   m_Layer: 0
   m_Name: SnowPlatformerTileMap_6
   m_TagString: Untagged
@@ -278,7 +279,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -345,6 +346,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!251 &218342664
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218342660}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &243196876
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,6 +757,7 @@ GameObject:
   - component: {fileID: 364384152}
   - component: {fileID: 364384153}
   - component: {fileID: 364384154}
+  - component: {fileID: 364384155}
   m_Layer: 0
   m_Name: SnowPlatformerTileMap_5
   m_TagString: Untagged
@@ -822,7 +843,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -837,6 +858,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 0.8}
   m_EdgeRadius: 0
+--- !u!251 &364384155
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364384151}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &372388652
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,6 +888,7 @@ GameObject:
   - component: {fileID: 372388653}
   - component: {fileID: 372388654}
   - component: {fileID: 372388655}
+  - component: {fileID: 372388656}
   m_Layer: 0
   m_Name: SnowPlatformerTileMap_6
   m_TagString: Untagged
@@ -933,7 +974,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -948,6 +989,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 0.8}
   m_EdgeRadius: 0
+--- !u!251 &372388656
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372388652}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &406057294
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,6 +1019,7 @@ GameObject:
   - component: {fileID: 406057295}
   - component: {fileID: 406057297}
   - component: {fileID: 406057296}
+  - component: {fileID: 406057298}
   m_Layer: 0
   m_Name: SnowPlatformerTileMap_5
   m_TagString: Untagged
@@ -992,7 +1053,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -1059,6 +1120,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!251 &406057298
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406057294}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &428941969
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,6 +1295,7 @@ GameObject:
   - component: {fileID: 481556315}
   - component: {fileID: 481556316}
   - component: {fileID: 481556317}
+  - component: {fileID: 481556318}
   m_Layer: 0
   m_Name: SnowPlatformerTileMap_5
   m_TagString: Untagged
@@ -1300,7 +1381,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -1315,6 +1396,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 0.8}
   m_EdgeRadius: 0
+--- !u!251 &481556318
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481556314}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &494235494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1437,6 +1537,7 @@ GameObject:
   - component: {fileID: 528576605}
   - component: {fileID: 528576606}
   - component: {fileID: 528576607}
+  - component: {fileID: 528576608}
   m_Layer: 0
   m_Name: SnowPlatformerTileMap_4
   m_TagString: Untagged
@@ -1522,7 +1623,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -1537,6 +1638,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 0.8}
   m_EdgeRadius: 0
+--- !u!251 &528576608
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528576604}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &585930027
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,6 +1668,7 @@ GameObject:
   - component: {fileID: 585930028}
   - component: {fileID: 585930029}
   - component: {fileID: 585930030}
+  - component: {fileID: 585930031}
   m_Layer: 0
   m_Name: SnowPlatformerTileMap_6
   m_TagString: Untagged
@@ -1633,7 +1754,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -1648,6 +1769,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 0.8}
   m_EdgeRadius: 0
+--- !u!251 &585930031
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585930027}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &624491875
 GameObject:
   m_ObjectHideFlags: 0
@@ -2108,6 +2248,7 @@ GameObject:
   - component: {fileID: 944135859}
   - component: {fileID: 944135860}
   - component: {fileID: 944135861}
+  - component: {fileID: 944135862}
   m_Layer: 0
   m_Name: SnowPlatformerTileMap_4
   m_TagString: Untagged
@@ -2193,7 +2334,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -2208,6 +2349,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 0.8}
   m_EdgeRadius: 0
+--- !u!251 &944135862
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944135858}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1015763240
 GameObject:
   m_ObjectHideFlags: 0
@@ -3065,6 +3225,7 @@ GameObject:
   - component: {fileID: 1886438792}
   - component: {fileID: 1886438794}
   - component: {fileID: 1886438793}
+  - component: {fileID: 1886438795}
   m_Layer: 0
   m_Name: SnowPlatformerTileMap_4
   m_TagString: Untagged
@@ -3098,7 +3259,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -3165,6 +3326,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!251 &1886438795
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886438791}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1948954297
 GameObject:
   m_ObjectHideFlags: 0
@@ -3774,6 +3954,10 @@ PrefabInstance:
     - target: {fileID: 363454134059845063, guid: 40d47c962cfff2d4a94e5ff57e4e115c, type: 3}
       propertyPath: m_Name
       value: KillZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 363454134059845063, guid: 40d47c962cfff2d4a94e5ff57e4e115c, type: 3}
+      propertyPath: m_TagString
+      value: Kill
       objectReference: {fileID: 0}
     - target: {fileID: 3363850607907610467, guid: 40d47c962cfff2d4a94e5ff57e4e115c, type: 3}
       propertyPath: m_RootOrder
