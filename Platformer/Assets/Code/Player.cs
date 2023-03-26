@@ -24,6 +24,8 @@ public class Player : MonoBehaviour
     public Transform feet;
     bool grounded = false;
 
+    private SaveGround _safeGround;
+
 
     void Start()
     {
@@ -31,6 +33,7 @@ public class Player : MonoBehaviour
         _renderer = GetComponent<SpriteRenderer>();
         _gameManager = GameObject.FindObjectOfType<GameManager>();
         _audioSource = GetComponent<AudioSource>();
+        _safeGround = GameObject.FindGameObjectWithTag("Player").GetComponent<SaveGround>();
     }
 
     IEnumerator FlashRed() {
@@ -47,7 +50,7 @@ public class Player : MonoBehaviour
         }
         else if (other.CompareTag("Kill")){
             _gameManager.loseLife(1);
-            SceneManager.LoadScene(currLvl);
+            _safeGround.WarpToSafeGround();
         }
         else if (other.gameObject.CompareTag("Goal"))
         {
