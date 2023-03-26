@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SaveGround : MonoBehaviour
 {
-    [SerializeField] private float saveFrequency = 3f;
+    [SerializeField] private float saveFrequency = 1f;
     public Vector2 SafeGroundLocation { get; private set; } = Vector2.zero;
 
     private Coroutine safeGroundCoroutine;
