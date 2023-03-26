@@ -12,6 +12,7 @@ TagManager:
   - Mud
   - Ice
   - Goal
+  - Boss
   layers:
   - Default
   - TransparentFX

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Snowball : MonoBehaviour
+public class EnemyProjectile : MonoBehaviour
 {
     Rigidbody2D _rigidbody2D;
     // Start is called before the first frame update
