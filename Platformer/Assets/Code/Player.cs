@@ -91,6 +91,8 @@ public class Player : MonoBehaviour
     void Update()
     {
         grounded = Physics2D.OverlapCircle(feet.position, .3f, whatIsGround);
+        _animator.SetBool("Grounded", grounded);
+        
         if(Input.GetButtonDown("Jump") && grounded)
         {
             _rigidbody.AddForce(new Vector2(0, jumpForce));
