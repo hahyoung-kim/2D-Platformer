@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     AudioSource _audioSource;
     public GameObject bulletPrefab;
     public Transform spawnPoint;
+    public string currLvl = "Level1";
     public string nextLvl = "Level2";
     public AudioClip goalSound;
 
@@ -44,10 +45,14 @@ public class Player : MonoBehaviour
             _gameManager.loseLife(1);
             StartCoroutine(FlashRed());
         }
+        else if (other.CompareTag("Kill")){
+            _gameManager.loseLife(1);
+            SceneManager.LoadScene(currLvl);
+        }
         else if (other.gameObject.CompareTag("Goal"))
         {
             _audioSource.PlayOneShot(goalSound);
-            SceneManager.LoadScene(nextLvl);
+            _gameManager.Fade(nextLvl);
         }
     }
 

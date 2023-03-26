@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
-    int score = 0;
     public int lives = 3;
     private int bossHealth = 100;
     // public TextMeshProUGUI scoreUI;
@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public string currLvl = "Level1";
     public string gameOverLevel= "Level1";
     //public GameObject explosion;
+    public Image black;
+    public Animator animator;
     
 
     private void Awake()
@@ -25,6 +27,7 @@ public class GameManager : MonoBehaviour
         }
         //reduceHealthUI.gameObject.SetActive(false);  
     }
+
     private void Start()
     {        
         // scoreUI.text = "score: " + score;
@@ -36,17 +39,11 @@ public class GameManager : MonoBehaviour
         // }
     }
 
-    public void AddScore(int points){
-        score += points;
-        //scoreUI.text = "score: " + score;
-    }
+    public void loseLife(int lostLife){
+        lives -= lostLife;
 
-    public void loseLife(int points){
-        lives -= points;
-        print("lives: " + lives);
         // scoreUI.text = "score: " + score;
         // livesUI.text = "lives: " + lives;
-
         if (lives<=0){
             StartCoroutine(PlayerDeath());
         }
@@ -58,8 +55,15 @@ public class GameManager : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         //Instantiate(explosion, player.transform.position, Quaternion.identity);
         Destroy(player);
-        yield return new WaitForSeconds(1);
+        animator.SetBool("Fade", true);
+        yield return new WaitUntil(()=>black.color.a==1);
         SceneManager.LoadScene(gameOverLevel);
+    }
+
+    public IEnumerator Fade(string nextLvl){
+        animator.SetBool("Fade", true);
+        yield return new WaitUntil(()=>black.color.a==1);
+        SceneManager.LoadScene(nextLvl);
     }
 
     public int GetLives() {
@@ -87,7 +91,6 @@ public class GameManager : MonoBehaviour
     public int GetBossHealth() {
         return bossHealth;
     }
-
     
     public void Update()
     {
