@@ -45,6 +45,8 @@ GameObject:
   - component: {fileID: 3652043186540994432}
   - component: {fileID: 3652043186540994446}
   - component: {fileID: 6055306637980769951}
+  - component: {fileID: -2558841399169170090}
+  - component: {fileID: 4930158106518088753}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -186,6 +188,7 @@ MonoBehaviour:
   shootSound: {fileID: 8300000, guid: 5c3c1ecb2c7eb464a9ac9d5b5ceb75f8, type: 3}
   bulletPrefab: {fileID: 8450655904411873518, guid: 59618d9b6a66f9748b8abbc96fc92ff0, type: 3}
   spawnPoint: {fileID: 1655330488205063255}
+  currLvl: Level1
   nextLvl: Level2
   goalSound: {fileID: 8300000, guid: 726ab82aaeee47942a1e332182c80c53, type: 3}
   whatIsGround:
@@ -288,6 +291,35 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-2558841399169170090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3652043186540994437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27d1a24ecf5f1c498edef711535ad85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveFrequency: 3
+--- !u!114 &4930158106518088753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3652043186540994437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d771697161dcd84aa89606e97f48e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraHeight: 0.25
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &5735992562992439474
 GameObject:
   m_ObjectHideFlags: 0
