@@ -32,6 +32,7 @@ public class BluePenguins : MonoBehaviour
             GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
             newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(-bulletSpd, 0));
             Destroy(newBullet, bulletLifeTime);
+            //check if player is within radius and otherwise won't play sound
             if(Vector3.Distance(player.transform.position, transform.position) < 10){
                 _audioSource.PlayOneShot(shootSound);
             }
