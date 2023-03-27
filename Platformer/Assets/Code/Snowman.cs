@@ -19,6 +19,7 @@ public class Snowman : MonoBehaviour
     SpriteRenderer _renderer;
     float bossHealth = 100;
     int spriteInd = 0;
+    public GameObject player;
 
     // Start is called before the first frame update
     IEnumerator Start()
@@ -31,7 +32,9 @@ public class Snowman : MonoBehaviour
         while (_gameManager.GetLives() > 0) {
             GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
             newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(-bulletSpd, 0));
-            _audioSource.PlayOneShot(shootSound);
+            if(Vector3.Distance(player.transform.position, transform.position) < 10){
+                _audioSource.PlayOneShot(shootSound);
+            }
             yield return new WaitForSeconds(Random.Range(.7f,1));
         }
     }
