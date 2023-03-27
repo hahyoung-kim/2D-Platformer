@@ -15997,12 +15997,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5346584847673115857, guid: ff18b96c4b26ce34085e5d25c0c12b0b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5346584847673115862, guid: ff18b96c4b26ce34085e5d25c0c12b0b, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 2062587530}
+    - target: {fileID: 5346584847673115862, guid: ff18b96c4b26ce34085e5d25c0c12b0b, type: 3}
+      propertyPath: bulletLifeTime
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5346584847673115866, guid: ff18b96c4b26ce34085e5d25c0c12b0b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -16461,6 +16465,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2062587530}
+    - target: {fileID: 7730466977066861090, guid: f4e29a054e7069045bbf49d90e84f750, type: 3}
+      propertyPath: bulletLifeTime
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7730466977066861094, guid: f4e29a054e7069045bbf49d90e84f750, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -16511,7 +16519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7730466977066862044, guid: f4e29a054e7069045bbf49d90e84f750, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4e29a054e7069045bbf49d90e84f750, type: 3}
@@ -17475,15 +17483,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5346584847673115857, guid: ff18b96c4b26ce34085e5d25c0c12b0b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5346584847673115862, guid: ff18b96c4b26ce34085e5d25c0c12b0b, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 2062587530}
+    - target: {fileID: 5346584847673115862, guid: ff18b96c4b26ce34085e5d25c0c12b0b, type: 3}
+      propertyPath: bulletLifeTime
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5346584847673115866, guid: ff18b96c4b26ce34085e5d25c0c12b0b, type: 3}
       propertyPath: m_FlipX
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5346584847673115867, guid: ff18b96c4b26ce34085e5d25c0c12b0b, type: 3}
       propertyPath: m_RootOrder

@@ -15,6 +15,8 @@ public class BluePenguins : MonoBehaviour
     public float secsMax = 1;
     public float bulletLifeTime = 1;
     public GameObject player;
+    private SpriteRenderer _renderer;
+
     //public GameObject explosion;
 
     // Start is called before the first frame update
@@ -22,6 +24,7 @@ public class BluePenguins : MonoBehaviour
     {
         _audioSource = GetComponent<AudioSource>();
         _gameManager = GameObject.FindObjectOfType<GameManager>();
+        _renderer = GetComponent<SpriteRenderer>();
         StartCoroutine(throwSnowBalls());
         
     }
@@ -30,7 +33,12 @@ public class BluePenguins : MonoBehaviour
         //while (_gameManager.GetLives() > 0) {
         while (true) {
             GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
-            newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(-bulletSpd, 0));
+            if (_renderer.flipX) {
+                newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(bulletSpd, 0));
+            } else {
+                newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(-bulletSpd, 0));
+            }
+            //newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(-bulletSpd, 0));
             Destroy(newBullet, bulletLifeTime);
             //check if player is within radius and otherwise won't play sound
             if(Vector3.Distance(player.transform.position, transform.position) < 10){
