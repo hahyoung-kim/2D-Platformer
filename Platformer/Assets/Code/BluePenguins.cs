@@ -13,6 +13,8 @@ public class BluePenguins : MonoBehaviour
     public AudioClip hitSound;
     public float secsMin = 1;
     public float secsMax = 1;
+    public float bulletLifeTime = 1;
+    public GameObject player;
     //public GameObject explosion;
 
     // Start is called before the first frame update
@@ -29,7 +31,10 @@ public class BluePenguins : MonoBehaviour
         while (true) {
             GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
             newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(-bulletSpd, 0));
-            _audioSource.PlayOneShot(shootSound);
+            Destroy(newBullet, bulletLifeTime);
+            if(Vector3.Distance(player.transform.position, transform.position) < 10){
+                _audioSource.PlayOneShot(shootSound);
+            }
             yield return new WaitForSeconds(Random.Range(secsMin, secsMax));
         }
     }
@@ -48,6 +53,5 @@ public class BluePenguins : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 }

@@ -58,6 +58,7 @@ public class Player : MonoBehaviour
         else if (other.gameObject.CompareTag("Goal"))
         {
             _audioSource.PlayOneShot(goalSound);
+            _gameManager.Fade();
             print(nextLvl);
             SceneManager.LoadScene(nextLvl);
         }

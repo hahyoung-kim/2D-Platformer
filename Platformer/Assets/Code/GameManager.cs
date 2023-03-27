@@ -60,10 +60,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(gameOverLevel);
     }
 
-    public IEnumerator Fade(string nextLvl){
+    public IEnumerator Fade(){
         animator.SetBool("Fade", true);
         yield return new WaitUntil(()=>black.color.a==1);
-        SceneManager.LoadScene(nextLvl);
     }
 
     public int GetLives() {
