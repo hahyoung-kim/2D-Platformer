@@ -102,7 +102,13 @@ public class Player : MonoBehaviour
             _audioSource.PlayOneShot(shootSound);
             // making a copy of bullet
             GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
-            newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(bulletSpeed, 0));
+            float xScale = transform.localScale.x;
+            if (xScale >= 0) {
+                newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(bulletSpeed, 0));
+            } else {
+                newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(-bulletSpeed, 0));
+            }
+            
         }
     }
 }
