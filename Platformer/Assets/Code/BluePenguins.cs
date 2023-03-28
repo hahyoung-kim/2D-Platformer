@@ -17,7 +17,7 @@ public class BluePenguins : MonoBehaviour
     public GameObject player;
     private SpriteRenderer _renderer;
 
-    //public GameObject explosion;
+    public GameObject explosion;
 
     // Start is called before the first frame update
     void Start()
@@ -52,7 +52,7 @@ public class BluePenguins : MonoBehaviour
     {
         if (other.CompareTag("FireBall")){
             //_gameManager.AddScore(pointValue);
-            //Instantiate(explosion, transform.position, Quaternion.identity);
+            Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
             Destroy(gameObject);
         }

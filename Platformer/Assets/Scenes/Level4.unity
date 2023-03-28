@@ -18620,6 +18620,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2062587530}
     - target: {fileID: 7730466977066861090, guid: f4e29a054e7069045bbf49d90e84f750, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 404328861436485488, guid: c67f3c22435ee084d889bcbd8f665109, type: 3}
+    - target: {fileID: 7730466977066861090, guid: f4e29a054e7069045bbf49d90e84f750, type: 3}
       propertyPath: bulletLifeTime
       value: 3
       objectReference: {fileID: 0}
@@ -20747,6 +20751,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2062587530}
     - target: {fileID: 5346584847673115862, guid: ff18b96c4b26ce34085e5d25c0c12b0b, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 404328861436485488, guid: c67f3c22435ee084d889bcbd8f665109, type: 3}
+    - target: {fileID: 5346584847673115862, guid: ff18b96c4b26ce34085e5d25c0c12b0b, type: 3}
       propertyPath: bulletLifeTime
       value: 3
       objectReference: {fileID: 0}
@@ -20815,6 +20823,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2062587530}
+    - target: {fileID: 5346584847673115862, guid: ff18b96c4b26ce34085e5d25c0c12b0b, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 404328861436485488, guid: c67f3c22435ee084d889bcbd8f665109, type: 3}
     - target: {fileID: 5346584847673115862, guid: ff18b96c4b26ce34085e5d25c0c12b0b, type: 3}
       propertyPath: bulletLifeTime
       value: 3
@@ -21277,6 +21289,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2062587530}
+    - target: {fileID: 7730466977066861090, guid: f4e29a054e7069045bbf49d90e84f750, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 404328861436485488, guid: c67f3c22435ee084d889bcbd8f665109, type: 3}
     - target: {fileID: 7730466977066861090, guid: f4e29a054e7069045bbf49d90e84f750, type: 3}
       propertyPath: bulletLifeTime
       value: 3
@@ -22301,6 +22317,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2062587530}
+    - target: {fileID: 5346584847673115862, guid: ff18b96c4b26ce34085e5d25c0c12b0b, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 404328861436485488, guid: c67f3c22435ee084d889bcbd8f665109, type: 3}
     - target: {fileID: 5346584847673115862, guid: ff18b96c4b26ce34085e5d25c0c12b0b, type: 3}
       propertyPath: bulletLifeTime
       value: 3
@@ -23849,6 +23869,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2062587530}
+    - target: {fileID: 7730466977066861090, guid: f4e29a054e7069045bbf49d90e84f750, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 404328861436485488, guid: c67f3c22435ee084d889bcbd8f665109, type: 3}
     - target: {fileID: 7730466977066861090, guid: f4e29a054e7069045bbf49d90e84f750, type: 3}
       propertyPath: bulletLifeTime
       value: 3
