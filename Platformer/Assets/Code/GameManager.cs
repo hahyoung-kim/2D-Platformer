@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public int lives = 3;
-    private int bossHealth = 100;
     // public TextMeshProUGUI scoreUI;
     public TextMeshProUGUI livesUI;
     public TextMeshProUGUI reduceHealthUI;
@@ -30,14 +29,14 @@ public class GameManager : MonoBehaviour
     private void Start()
     {        
         // scoreUI.text = "score: " + score;
-        livesUI.text = "lives: " + lives;  
+        livesUI.text = "Lives: " + lives;  
     }
 
     public void loseLife(int lostLife){
         lives -= lostLife;
 
         // scoreUI.text = "score: " + score;
-        livesUI.text = "lives: " + lives;
+        livesUI.text = "Lives: " + lives;
         if (lives<=0){
             StartCoroutine(PlayerDeath());
         }
