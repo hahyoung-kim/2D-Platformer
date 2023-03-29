@@ -250,7 +250,7 @@ MonoBehaviour:
   bulletSpd: 400
   shootSound: {fileID: 8300000, guid: 7b405655e31d7304a87f310cab875363, type: 3}
   hitSound: {fileID: 8300000, guid: d4daf3c7296151441ad2bd5a6fae34a1, type: 3}
-  secsMin: 0.3
+  secsMin: 0.5
   secsMax: 1
   bulletLifeTime: 1
   player: {fileID: 0}

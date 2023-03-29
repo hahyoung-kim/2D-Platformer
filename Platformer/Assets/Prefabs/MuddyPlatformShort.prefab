@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7971295379995785858}
   - component: {fileID: 7971295379995785859}
-  - component: {fileID: 7971295379995785860}
+  - component: {fileID: 8012213291605974590}
   m_Layer: 0
   m_Name: MuddyPlatformShort
   m_TagString: Mud
@@ -63,27 +63,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.2426162, y: 0.45491934}
   m_EdgeRadius: 0
---- !u!50 &7971295379995785860
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!251 &8012213291605974590
+PlatformEffector2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7971295379995785861}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &7971295380148334666
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,7 +302,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7971295381028666303}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.202858, y: 0.007908344, z: 0}
+  m_LocalPosition: {x: 2.202858, y: 0.01609755, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -388,7 +386,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7971295381608673886}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.01609755, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
