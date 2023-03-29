@@ -8,7 +8,7 @@ public class BlackPenguin : MonoBehaviour
     AudioSource _audioSource;
     public AudioClip hitSound;
     
-    //public GameObject explosion;
+    public GameObject explosion;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class BlackPenguin : MonoBehaviour
     {
         if (other.CompareTag("FireBall")){
             //_gameManager.AddScore(pointValue);
-            //Instantiate(explosion, transform.position, Quaternion.identity);
+            Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
             Destroy(gameObject);
         }

@@ -156,6 +156,9 @@ MonoBehaviour:
   hitSound: {fileID: 8300000, guid: d4daf3c7296151441ad2bd5a6fae34a1, type: 3}
   secsMin: 1
   secsMax: 1
+  bulletLifeTime: 1
+  player: {fileID: 0}
+  explosion: {fileID: 404328861436485488, guid: c67f3c22435ee084d889bcbd8f665109, type: 3}
 --- !u!82 &7730466977066862045
 AudioSource:
   m_ObjectHideFlags: 0
