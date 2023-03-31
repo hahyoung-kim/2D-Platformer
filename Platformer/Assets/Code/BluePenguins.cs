@@ -29,8 +29,7 @@ public class BluePenguins : MonoBehaviour
     }
 
     IEnumerator throwSnowBalls() {
-        //while (_gameManager.GetLives() > 0) {
-        while (true) {
+        while (_gameManager.GetLives() > 0) {
             GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
             if (_renderer.flipX) {
                 newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(bulletSpd, 0));
