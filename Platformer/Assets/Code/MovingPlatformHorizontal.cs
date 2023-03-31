@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovingPlatformHorizontal : MonoBehaviour
 {
-    public float spd = 0.015f;
+    public float spd = 0.1f;
     Rigidbody2D _rigidbody2D;
     public float startPos;
     public float endPos;
@@ -14,21 +14,28 @@ public class MovingPlatformHorizontal : MonoBehaviour
     void Start()
     {
         if (spd == 0) {
-            spd = 0.015f;
+            spd = 0.1f;
         }
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        StartCoroutine(moveY());
+        //StartCoroutine(moveX());
     }
 
-    IEnumerator moveY() {
-        while (true) {
-            if (transform.position.x <= endPos || transform.position.x >= startPos) {
-            dir *= -1;
-            }
-            transform.position = new Vector2(transform.position.x + (dir * spd), transform.position.y);
-            yield return new WaitForSeconds(.005f);
-        }
+    // IEnumerator moveX() {
+    //     while (true) {
+    //         if (transform.position.x <= endPos || transform.position.x >= startPos) {
+    //         dir *= -1;
+    //         }
+    //         transform.position = new Vector2(transform.position.x + (dir * spd), transform.position.y);
+    //         yield return new WaitForSeconds(.005f);
+    //     }
         
+    // }
+
+    void FixedUpdate() {
+        if (transform.position.x <= endPos || transform.position.x >= startPos) {
+            dir *= -1;
+        }
+        transform.position = new Vector2(transform.position.x + (dir * spd), transform.position.y);
     }
 
     void OnCollisionEnter2D(Collision2D col)

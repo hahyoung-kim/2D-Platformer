@@ -57,12 +57,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3652043186540994437, guid: acb51718b189f74489b4f074cb0d51fd, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Player Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3652043186540994446, guid: acb51718b189f74489b4f074cb0d51fd, type: 3}
       propertyPath: nextLvl
       value: Level2
       objectReference: {fileID: 0}
+    - target: {fileID: 3652043186540994446, guid: acb51718b189f74489b4f074cb0d51fd, type: 3}
+      propertyPath: goalSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 151dacbf1582ddf45b507566ba64af5e, type: 3}
+    - target: {fileID: 3652043186540994446, guid: acb51718b189f74489b4f074cb0d51fd, type: 3}
+      propertyPath: lockedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: b8907c83a88c3e04fbcc77d0622c5fd3, type: 3}
+    - target: {fileID: 3652043186540994446, guid: acb51718b189f74489b4f074cb0d51fd, type: 3}
+      propertyPath: pickupSound
+      value: 
+      objectReference: {fileID: 8300000, guid: a18bf4b8c5048464aa2c82a78ba2b0b7, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acb51718b189f74489b4f074cb0d51fd, type: 3}
 --- !u!1 &6989649948320631692 stripped
@@ -90,3 +102,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &4759438191762791061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6989649948320631692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eefaf5b9e4c30a9468ea9f145f167c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locked: 1
+  woodNum: 0

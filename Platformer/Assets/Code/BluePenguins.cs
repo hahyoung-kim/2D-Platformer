@@ -10,7 +10,6 @@ public class BluePenguins : MonoBehaviour
     public Transform spawnPoint;
     public int bulletSpd = 300;
     public AudioClip shootSound;
-    public AudioClip hitSound;
     public float secsMin = 1;
     public float secsMax = 1;
     public float bulletLifeTime = 1;
@@ -30,8 +29,7 @@ public class BluePenguins : MonoBehaviour
     }
 
     IEnumerator throwSnowBalls() {
-        //while (_gameManager.GetLives() > 0) {
-        while (true) {
+        while (_gameManager.GetLives() > 0) {
             GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
             if (_renderer.flipX) {
                 newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(bulletSpd, 0));
@@ -54,6 +52,7 @@ public class BluePenguins : MonoBehaviour
     {
         if (other.CompareTag("FireBall")){
             //_gameManager.AddScore(pointValue);
+            _gameManager.EnemyDeathAudio();
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
             Destroy(gameObject);

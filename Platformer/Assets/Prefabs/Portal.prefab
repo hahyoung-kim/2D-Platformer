@@ -4823,6 +4823,7 @@ GameObject:
   - component: {fileID: 8926982169087329142}
   - component: {fileID: 8926982169087329143}
   - component: {fileID: 8926982169087329140}
+  - component: {fileID: 4265357373539115317}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Goal
@@ -4924,3 +4925,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7762814, y: 2.3371372}
   m_EdgeRadius: 0
+--- !u!114 &4265357373539115317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8926982169087329141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eefaf5b9e4c30a9468ea9f145f167c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locked: 1
+  woodNum: 0
+  levelToLoad: 
+  lockedSound: {fileID: 0}
+  unlockedSound: {fileID: 0}

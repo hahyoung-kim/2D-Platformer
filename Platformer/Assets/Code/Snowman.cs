@@ -7,7 +7,7 @@ public class Snowman : MonoBehaviour
     //int spd = 100;
     public Sprite[] spriteArray;
     Rigidbody2D _rigidbody2D;
-    //public GameObject explosion;
+    public GameObject explosion;
     //int ptVal = 1000;
     GameManager _gameManager;
     AudioSource _audioSource;
@@ -35,7 +35,7 @@ public class Snowman : MonoBehaviour
             if(Vector3.Distance(player.transform.position, transform.position) < 10){
                 _audioSource.PlayOneShot(shootSound);
             }
-            yield return new WaitForSeconds(Random.Range(.7f,1));
+            yield return new WaitForSeconds(Random.Range(1,2));
         }
     }
 
@@ -44,9 +44,6 @@ public class Snowman : MonoBehaviour
             _audioSource.PlayOneShot(hitSound);
             StartCoroutine(FlashRed());
             BossTakeDmg(2.5f);
-            if (bossHealth <= 0) {
-                Destroy(other.gameObject);
-            }
         }
     }
 
@@ -62,7 +59,8 @@ public class Snowman : MonoBehaviour
         
         if (bossHealth <= 0) {
             //_gameManager.AddScore(ptVal);
-            //Instantiate(explosion, transform.position, Quaternion.identity);
+            _gameManager.EnemyDeathAudio();
+            Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
