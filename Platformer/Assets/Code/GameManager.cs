@@ -7,9 +7,14 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public int lives = 3;
+    public int currWood = 0;
+    public int currLvlWoods = 1;
+    public int totalWoodsCollected = 3;
+    public int totalGameWoods = 4;
     // public TextMeshProUGUI scoreUI;
     public TextMeshProUGUI livesUI;
     public TextMeshProUGUI reduceHealthUI;
+    public TextMeshProUGUI woodUI;
     public string currLvl = "Level1";
     public string gameOverLevel= "Level1";
     public GameObject explosion;
@@ -30,6 +35,7 @@ public class GameManager : MonoBehaviour
     {        
         // scoreUI.text = "score: " + score;
         livesUI.text = "Lives: " + lives;  
+        woodUI.text = "Collected for Current Level: " + currWood + "/" + currLvlWoods + "\nTotal      Collected: " + totalWoodsCollected + "/" + totalGameWoods;  
     }
 
     public void loseLife(int lostLife){
@@ -42,6 +48,12 @@ public class GameManager : MonoBehaviour
         }
         ReduceHealthText();
 
+    }
+
+    public void incrWood() {
+        currWood += 1;
+        totalWoodsCollected += 1;
+        woodUI.text = "Collected for Current Level: " + currWood + "/" + currLvlWoods + "\nTotal      Collected: " + totalWoodsCollected + "/" + totalGameWoods;  
     }
 
     IEnumerator PlayerDeath() {

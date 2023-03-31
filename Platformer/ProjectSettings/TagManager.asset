@@ -13,6 +13,8 @@ TagManager:
   - Ice
   - Goal
   - Boss
+  - Wood
+  - Teleport
   layers:
   - Default
   - TransparentFX

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Player : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class Player : MonoBehaviour
     GameManager _gameManager;
     public AudioClip hurtSound;
     public AudioClip shootSound;
+    public AudioClip lockedSound;
+    public AudioClip pickupSound;
     AudioSource _audioSource;
     public GameObject bulletPrefab;
     public Transform spawnPoint;
@@ -57,10 +60,25 @@ public class Player : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Goal"))
         {
-            _audioSource.PlayOneShot(goalSound);
-            _gameManager.Fade();
-            print(nextLvl);
-            SceneManager.LoadScene(nextLvl);
+            if (other.GetComponent<Portal>().canUnlock()) {
+                _audioSource.PlayOneShot(goalSound);
+                _gameManager.Fade();
+                SceneManager.LoadScene(nextLvl);
+            } else {
+                _audioSource.PlayOneShot(lockedSound);
+            }
+            
+        } else if (other.gameObject.CompareTag("Wood"))
+        {
+            // Wood name is "WoodX" where X is the wood number
+            int woodNum = Int32.Parse(other.gameObject.name.Substring(4));
+            Destroy(other.gameObject);
+            _gameManager.incrWood();
+            PublicVars.hasWood[woodNum] = true;
+            // play sound
+            _audioSource.PlayOneShot(pickupSound);
+        } else if (other.CompareTag("Teleport")){
+            transform.position = other.GetComponent<Teleport>().getTeleportDest();
         }
     }
 
