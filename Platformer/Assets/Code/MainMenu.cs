@@ -10,7 +10,11 @@ public class MainMenu : MonoBehaviour
     }
 
     public void QuitGame(){
+    #if !UNITY_WEBGL
         Application.Quit();
+    #else
+        Application.OpenURL("about:blank");
+    #endif
     }
 
     public void RestartGame(){
