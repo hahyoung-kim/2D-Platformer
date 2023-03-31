@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
-    public float spd = 0.015f;
+    public float spd = 0.1f;
     Rigidbody2D _rigidbody2D;
     public float startPos;
     public float endPos;
@@ -14,20 +14,28 @@ public class MovingPlatform : MonoBehaviour
     void Start()
     {
         if (spd == 0) {
-            spd = 0.015f;
+            spd = 0.1f;
         }
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        StartCoroutine(moveY());
+        //StartCoroutine(moveY());
     }
 
-    IEnumerator moveY() {
-        while (true) {
-            if (transform.position.y <= endPos || transform.position.y >= startPos) {
+    // IEnumerator moveY() {
+    //     while (true) {
+    //         if (transform.position.y <= endPos || transform.position.y >= startPos) {
+    //         dir *= -1;
+    //         }
+    //         transform.position = new Vector2(transform.position.x, transform.position.y + (dir * spd));
+    //         yield return new WaitForSeconds(.005f);
+    //     }
+        
+    // }
+
+    void FixedUpdate() {
+        if (transform.position.y <= endPos || transform.position.y >= startPos) {
             dir *= -1;
-            }
-            transform.position = new Vector2(transform.position.x, transform.position.y + (dir * spd));
-            yield return new WaitForSeconds(.005f);
         }
+        transform.position = new Vector2(transform.position.x, transform.position.y + (dir * spd));
         
     }
 

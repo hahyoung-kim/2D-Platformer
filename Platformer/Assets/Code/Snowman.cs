@@ -35,7 +35,7 @@ public class Snowman : MonoBehaviour
             if(Vector3.Distance(player.transform.position, transform.position) < 10){
                 _audioSource.PlayOneShot(shootSound);
             }
-            yield return new WaitForSeconds(Random.Range(.7f,1));
+            yield return new WaitForSeconds(Random.Range(1,2));
         }
     }
 
