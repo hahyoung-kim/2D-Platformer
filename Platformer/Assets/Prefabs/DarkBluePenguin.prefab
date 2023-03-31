@@ -249,7 +249,6 @@ MonoBehaviour:
   spawnPoint: {fileID: 5346584847942203422}
   bulletSpd: 400
   shootSound: {fileID: 8300000, guid: 7b405655e31d7304a87f310cab875363, type: 3}
-  hitSound: {fileID: 8300000, guid: d4daf3c7296151441ad2bd5a6fae34a1, type: 3}
   secsMin: 0.5
   secsMax: 1
   bulletLifeTime: 1
@@ -374,7 +373,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.016109645, y: 0.009397328}
+  m_Offset: {x: 0.0078475475, y: 0.0025122762}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -385,7 +384,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0966576, y: 1.0187945}
+  m_Size: {x: 1.1875408, y: 1.0711213}
   m_EdgeRadius: 0
 --- !u!1 &5346584847942203417
 GameObject:

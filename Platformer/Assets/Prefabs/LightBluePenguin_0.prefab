@@ -124,7 +124,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0054483414, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -135,7 +135,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.135, y: 1.605}
+  m_Size: {x: 1.1168385, y: 1.575943}
   m_EdgeRadius: 0
 --- !u!114 &7730466977066861090
 MonoBehaviour:
@@ -153,7 +153,6 @@ MonoBehaviour:
   spawnPoint: {fileID: 7730466979000046092}
   bulletSpd: 300
   shootSound: {fileID: 8300000, guid: 7b405655e31d7304a87f310cab875363, type: 3}
-  hitSound: {fileID: 8300000, guid: d4daf3c7296151441ad2bd5a6fae34a1, type: 3}
   secsMin: 1
   secsMax: 1
   bulletLifeTime: 1
@@ -401,7 +400,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0016146898, y: 0.0023014843}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -412,7 +411,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.0549381, y: 1.0322254}
   m_EdgeRadius: 0
 --- !u!1 &7730466979000046095
 GameObject:
