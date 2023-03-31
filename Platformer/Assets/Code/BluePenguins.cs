@@ -10,7 +10,6 @@ public class BluePenguins : MonoBehaviour
     public Transform spawnPoint;
     public int bulletSpd = 300;
     public AudioClip shootSound;
-    public AudioClip hitSound;
     public float secsMin = 1;
     public float secsMax = 1;
     public float bulletLifeTime = 1;
@@ -54,6 +53,7 @@ public class BluePenguins : MonoBehaviour
     {
         if (other.CompareTag("FireBall")){
             //_gameManager.AddScore(pointValue);
+            _gameManager.EnemyDeathAudio();
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
             Destroy(gameObject);

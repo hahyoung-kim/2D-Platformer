@@ -5291,6 +5291,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b6018700f41c75749a08a81d9ec2e79c, type: 3}
   - {fileID: 21300000, guid: 64f4cd475e68bd9479be20d880a214ce, type: 3}
   - {fileID: 21300000, guid: 5ce6d960afa066c449f32742b8ec1faf, type: 3}
+  explosion: {fileID: 0}
   bulletPrefab: {fileID: 7706386188701963473, guid: 0a852edd72699c84ab0155b935e8d18d, type: 3}
   spawnPoint: {fileID: 1633967246}
   shootSound: {fileID: 8300000, guid: 7b405655e31d7304a87f310cab875363, type: 3}
@@ -21475,6 +21476,7 @@ MonoBehaviour:
   explosion: {fileID: 404328861436485488, guid: c67f3c22435ee084d889bcbd8f665109, type: 3}
   black: {fileID: 1733328909}
   animator: {fileID: 1733328908}
+  hitSound: {fileID: 8300000, guid: e1ef7accaf53dd845ad2110ea417bd5b, type: 3}
 --- !u!1001 &1555980120
 PrefabInstance:
   m_ObjectHideFlags: 0

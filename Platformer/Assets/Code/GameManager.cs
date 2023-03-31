@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     public GameObject explosion;
     public Image black;
     public Animator animator;
+    AudioSource _audioSource;
+    public AudioClip hitSound;
     
 
     private void Awake()
@@ -34,6 +36,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {        
         // scoreUI.text = "score: " + score;
+        _audioSource = GetComponent<AudioSource>();
         livesUI.text = "Lives: " + lives;  
         woodUI.text = "Collected for Current Level: " + currWood + "/" + currLvlWoods + "\nTotal      Collected: " + totalWoodsCollected + "/" + totalGameWoods;  
     }
@@ -81,6 +84,10 @@ public class GameManager : MonoBehaviour
 
     public void SetInactive(){
         reduceHealthUI.gameObject.SetActive(false);
+    }
+
+    public void EnemyDeathAudio() {
+        _audioSource.PlayOneShot(hitSound);
     }
 
     public void Update()
