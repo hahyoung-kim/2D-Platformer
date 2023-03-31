@@ -58,6 +58,11 @@ public class Player : MonoBehaviour
         else if (other.CompareTag("Kill")){
             _gameManager.loseLife(_gameManager.GetLives()); // lose all lives
         }
+        else if (other.CompareTag("Med")){
+            _audioSource.PlayOneShot(pickupSound);
+            Destroy(other.gameObject);
+            _gameManager.incrLife(10);
+        }
         else if (other.gameObject.CompareTag("Goal"))
         {
             if (other.GetComponent<Portal>().canUnlock()) {

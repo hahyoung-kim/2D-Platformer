@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
         // scoreUI.text = "score: " + score;
         _audioSource = GetComponent<AudioSource>();
         livesUI.text = "Lives: " + lives;  
+        reduceHealthUI.text = "-1";
         woodUI.text = "Collected for Current Level: " + currWood + "/" + currLvlWoods + "\nTotal      Collected: " + totalWoodsCollected + "/" + totalGameWoods;  
     }
 
@@ -49,8 +50,14 @@ public class GameManager : MonoBehaviour
         if (lives<=0){
             StartCoroutine(PlayerDeath());
         }
-        ReduceHealthText();
+        ReduceHealthText("-" + lostLife);
 
+    }
+
+    public void incrLife(int add){
+        lives += add;
+        livesUI.text = "Lives: " + lives;
+        ReduceHealthText("+" + add);
     }
 
     public void incrWood() {
@@ -77,7 +84,8 @@ public class GameManager : MonoBehaviour
         return lives;
     }
 
-    public void ReduceHealthText(){
+    public void ReduceHealthText(string text){
+        reduceHealthUI.text = text;
         reduceHealthUI.gameObject.SetActive(true);
         Invoke("SetInactive", .5f);
     }

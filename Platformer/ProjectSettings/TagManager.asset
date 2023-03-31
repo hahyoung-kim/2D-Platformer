@@ -15,6 +15,7 @@ TagManager:
   - Boss
   - Wood
   - Teleport
+  - Med
   layers:
   - Default
   - TransparentFX
