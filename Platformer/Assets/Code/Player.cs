@@ -89,13 +89,17 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other) {
         if (other.gameObject.tag == "Ice"){
+            
             speed = 10;
+            print("ice " + speed);
         }
         else if (other.gameObject.tag == "Mud"){
             speed = 2;
+            print("mud " + speed);
         }
         else{
             speed = 5;
+            print("normal " + speed);
         }
     }
 
