@@ -50,6 +50,7 @@ public class Player : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
+        //print("trigger " + other.gameObject.name + " " + other.gameObject.tag);
         if (other.CompareTag("Enemy") || other.CompareTag("Boss")) {
             _audioSource.PlayOneShot(hurtSound);
             _gameManager.loseLife(1);
@@ -91,15 +92,15 @@ public class Player : MonoBehaviour
         if (other.gameObject.tag == "Ice"){
             
             speed = 10;
-            print("ice " + speed);
+            //print("ice " + speed);
         }
         else if (other.gameObject.tag == "Mud"){
             speed = 2;
-            print("mud " + speed);
+            //print("mud " + speed);
         }
         else{
             speed = 5;
-            print("normal " + speed);
+            //print("normal " + speed);
         }
     }
 
