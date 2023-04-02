@@ -92,15 +92,15 @@ public class Player : MonoBehaviour
         if (other.gameObject.tag == "Ice"){
             
             speed = 10;
-            //print("ice " + speed);
+            print("ice " + speed);
         }
         else if (other.gameObject.tag == "Mud"){
             speed = 2;
-            //print("mud " + speed);
+            print("mud " + speed);
         }
         else{
             speed = 5;
-            //print("normal " + speed);
+            print("normal " + speed);
         }
     }
 
