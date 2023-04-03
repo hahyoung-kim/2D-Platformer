@@ -126,6 +126,7 @@ public class Player : MonoBehaviour
             _rigidbody.AddForce(new Vector2(0, jumpForce));
         }
         if (Input.GetButtonDown("Fire1")){
+            _animator.SetBool("Shooting", true);
             _audioSource.PlayOneShot(shootSound);
             // making a copy of bullet
             GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
@@ -135,7 +136,7 @@ public class Player : MonoBehaviour
             } else {
                 newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(-bulletSpeed, 0));
             }
-            
-        }
+            _animator.SetBool("Shooting", false);
+        } 
     }
 }
