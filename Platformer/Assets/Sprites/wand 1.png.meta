@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8c4c67ee87ef7e34ea81ce6643cac538
+guid: 0aba3e07fd09b35419fc3aa5bd179988
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wand_0
+      name: wand 1_0
       rect:
         serializedVersion: 2
         x: 283
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 872a5ec726160f84db47a582456399ce
-      internalID: -1700824681
+      spriteID: 52aa5fb4a33f13646b7f734a434979b6
+      internalID: -820341727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wand_1
+      name: wand 1_1
       rect:
         serializedVersion: 2
         x: 44
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad4323af1a1ecc548993aae638117b65
-      internalID: -1953223232
+      spriteID: 9b0fec8e8cf6b6240b40b31cb911c20a
+      internalID: -1464620994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wand_2
+      name: wand 1_2
       rect:
         serializedVersion: 2
         x: 283
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c5c2ec1236f91044b18c10b33c80366
-      internalID: 314121618
+      spriteID: 80ec599ec0ac90046a7d0b361cf7a5da
+      internalID: -1623332917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wand_3
+      name: wand 1_3
       rect:
         serializedVersion: 2
         x: 814
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e548de65142aeef4482b04b4ef85110e
-      internalID: -1937004755
+      spriteID: 3caec0cf80249c144b5eb9c073027826
+      internalID: 700195100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wand_4
+      name: wand 1_4
       rect:
         serializedVersion: 2
         x: 1053
@@ -215,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 000e2a762b0081448bc498d97e7c595b
-      internalID: 1249684461
+      spriteID: f288d044546c2674d885031f5bf6f7ba
+      internalID: -736185166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wand_5
+      name: wand 1_5
       rect:
         serializedVersion: 2
         x: 44
@@ -236,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f52a64bfc5379a740bd4758e7af5ed2e
-      internalID: -175310992
+      spriteID: 77da65d06cff29c4a8fdd41d29d7d3a6
+      internalID: 343508885
       vertices: []
       indices: 
       edges: []
@@ -253,12 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      wand_1: -1953223232
-      wand_4: 1249684461
-      wand_3: -1937004755
-      wand_5: -175310992
-      wand_0: -1700824681
-      wand_2: 314121618
+      wand 1_5: 343508885
+      wand 1_4: -736185166
+      wand 1_3: 700195100
+      wand 1_2: -1623332917
+      wand 1_1: -1464620994
+      wand 1_0: -820341727
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

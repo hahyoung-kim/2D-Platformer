@@ -29,7 +29,6 @@ public class Player : MonoBehaviour
     public LayerMask whatIsGround;
     public Transform feet;
     bool grounded = false;
-
     private SaveGround _safeGround;
 
 
