@@ -136,7 +136,9 @@ public class Player : MonoBehaviour
             } else {
                 newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(-bulletSpeed, 0));
             }
-            _animator.SetBool("Shooting", false);
+            
+
         } 
+        _animator.SetBool("Shooting", false);
     }
 }
