@@ -9,6 +9,12 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("Level1");
     }
+
+    public void HowToPlay()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
+
     public void QuitGame()
     {
     #if !UNITY_WEBGL
