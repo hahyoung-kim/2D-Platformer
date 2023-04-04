@@ -58,6 +58,12 @@ public class Player : MonoBehaviour
         else if (other.CompareTag("Kill")){
             _gameManager.loseLife(_gameManager.GetLives()); // lose all lives
         }
+        else if (other.CompareTag("Wand")){
+            _audioSource.PlayOneShot(pickupSound);
+            Destroy(other.gameObject);
+            _gameManager.PickUpWand();
+            _gameManager.ShootText();
+        }
         else if (other.CompareTag("Med")){
             _audioSource.PlayOneShot(pickupSound);
             Destroy(other.gameObject);
@@ -126,9 +132,9 @@ public class Player : MonoBehaviour
             _rigidbody.AddForce(new Vector2(0, jumpForce));
         }
 
-        if (Input.GetButtonDown("Fire1")){
+        if (Input.GetButtonDown("Fire1") && _gameManager.PlayerShoot()){
             //_animator.SetTrigger("Wand");
-             _animator.SetBool("Shooting", true);
+            _animator.SetBool("Shooting", true);
             _audioSource.PlayOneShot(shootSound);
             // making a copy of bullet
             GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);

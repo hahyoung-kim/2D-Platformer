@@ -16,6 +16,7 @@ TagManager:
   - Wood
   - Teleport
   - Med
+  - Wand
   layers:
   - Default
   - TransparentFX

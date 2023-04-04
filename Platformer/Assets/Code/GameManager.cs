@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     // public TextMeshProUGUI scoreUI;
     public TextMeshProUGUI livesUI;
     public TextMeshProUGUI reduceHealthUI;
+    public TextMeshProUGUI shootUI;
     public TextMeshProUGUI woodUI;
     public string currLvl = "Level1";
     public string gameOverLevel= "Level1";
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
     public Animator animator;
     AudioSource _audioSource;
     public AudioClip hitSound;
+    private bool canShoot = true;
     
 
     private void Awake()
@@ -31,6 +33,10 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         reduceHealthUI.gameObject.SetActive(false);  
+        if (currLvl == "Level1") {
+            canShoot = false;
+            shootUI.gameObject.SetActive(false);  
+        }
     }
 
     private void Start()
@@ -90,12 +96,24 @@ public class GameManager : MonoBehaviour
         Invoke("SetInactive", .5f);
     }
 
+    public void ShootText(){
+        shootUI.gameObject.SetActive(true);
+    }
+
     public void SetInactive(){
         reduceHealthUI.gameObject.SetActive(false);
     }
 
     public void EnemyDeathAudio() {
         _audioSource.PlayOneShot(hitSound);
+    }
+
+    public void PickUpWand() {
+        canShoot = true;
+    }
+
+    public bool PlayerShoot() {
+        return canShoot;
     }
 
     public void Update()
