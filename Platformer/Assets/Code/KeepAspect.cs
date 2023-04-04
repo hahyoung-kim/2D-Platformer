@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.iOS;
 #endif
 
-public class KeepApect : MonoBehaviour
+public class KeepAspect : MonoBehaviour
 {
     private Camera bgCam;
     private Camera mainCam;
