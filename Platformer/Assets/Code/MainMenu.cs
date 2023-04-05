@@ -23,6 +23,18 @@ public class MainMenu : MonoBehaviour
 
     public void HowToPlay()
     {
-        SceneManager.LoadScene("HowToPlay");
+        SceneManager.LoadScene("HTP-pg1");
+    }
+
+    public void Previous(){
+        SceneManager.LoadScene("HTP-pg1");
+    }
+
+    public void Next(){
+        SceneManager.LoadScene("HTP-pg2");
+    }
+
+    public void Back(){
+        SceneManager.LoadScene("Title");
     }
 }
