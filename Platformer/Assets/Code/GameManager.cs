@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public Animator animator;
     AudioSource _audioSource;
     public AudioClip hitSound;
+    public AudioClip teleSound;
     private bool canShoot = true;
     
 
@@ -106,6 +107,10 @@ public class GameManager : MonoBehaviour
 
     public void EnemyDeathAudio() {
         _audioSource.PlayOneShot(hitSound);
+    }
+
+    public void TeleportAudio() {
+        _audioSource.PlayOneShot(teleSound);
     }
 
     public void PickUpWand() {

@@ -3,7 +3,16 @@ guid: 87d25d3c725d12b408062f3c1347176b
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - livesUI: {instanceID: 0}
+  - reduceHealthUI: {instanceID: 0}
+  - shootUI: {instanceID: 0}
+  - woodUI: {instanceID: 0}
+  - explosion: {instanceID: 0}
+  - black: {instanceID: 0}
+  - animator: {instanceID: 0}
+  - hitSound: {instanceID: 0}
+  - teleSound: {fileID: 8300000, guid: 151dacbf1582ddf45b507566ba64af5e, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

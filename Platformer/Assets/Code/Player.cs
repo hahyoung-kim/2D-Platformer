@@ -24,7 +24,6 @@ public class Player : MonoBehaviour
     public Transform spawnPoint;
     public string currLvl = "Level1";
     public string nextLvl = "Level2";
-    public AudioClip goalSound;
 
     public LayerMask whatIsGround;
     public Transform feet;
@@ -72,7 +71,7 @@ public class Player : MonoBehaviour
         else if (other.gameObject.CompareTag("Goal"))
         {
             if (other.GetComponent<Portal>().canUnlock()) {
-                _audioSource.PlayOneShot(goalSound);
+                _gameManager.TeleportAudio();
                 _gameManager.Fade();
                 SceneManager.LoadScene(nextLvl);
             } else {

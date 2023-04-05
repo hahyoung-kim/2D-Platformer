@@ -41,7 +41,7 @@ public class BluePenguins : MonoBehaviour
                 Destroy(newBullet, bulletLifeTime);
             }
             //check if player is within radius and otherwise won't play sound
-            if(Vector3.Distance(player.transform.position, transform.position) < 10){
+            if(Vector3.Distance(player.transform.position, transform.position) < 15){
                 _audioSource.PlayOneShot(shootSound);
             }
             yield return new WaitForSeconds(Random.Range(secsMin, secsMax));
