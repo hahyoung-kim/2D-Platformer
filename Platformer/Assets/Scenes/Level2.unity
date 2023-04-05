@@ -2516,7 +2516,7 @@ MonoBehaviour:
   black: {fileID: 2015831639}
   animator: {fileID: 2015831638}
   hitSound: {fileID: 8300000, guid: e1ef7accaf53dd845ad2110ea417bd5b, type: 3}
-  teleSound: {fileID: 0}
+  teleSound: {fileID: 8300000, guid: a18bf4b8c5048464aa2c82a78ba2b0b7, type: 3}
 --- !u!1 &1407933637
 GameObject:
   m_ObjectHideFlags: 0

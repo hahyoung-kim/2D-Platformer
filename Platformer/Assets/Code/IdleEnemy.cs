@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlackPenguin : MonoBehaviour
+public class IdleEnemy : MonoBehaviour
 {
     GameManager _gameManager;
     

@@ -13108,6 +13108,7 @@ MonoBehaviour:
   black: {fileID: 1255763914}
   animator: {fileID: 1255763913}
   hitSound: {fileID: 8300000, guid: e1ef7accaf53dd845ad2110ea417bd5b, type: 3}
+  teleSound: {fileID: 8300000, guid: a18bf4b8c5048464aa2c82a78ba2b0b7, type: 3}
 --- !u!82 &1702284306
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14103,7 +14104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2982916925509886669, guid: 59d788b0ffe5819488b17f06f4e3a1d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.471317
+      value: -11.4713335
       objectReference: {fileID: 0}
     - target: {fileID: 2982916925509886669, guid: 59d788b0ffe5819488b17f06f4e3a1d2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14156,7 +14157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3250418361745756236, guid: 59174e06ca6676445842b47132af97b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.471317
+      value: -11.4713335
       objectReference: {fileID: 0}
     - target: {fileID: 3250418361745756236, guid: 59174e06ca6676445842b47132af97b7, type: 3}
       propertyPath: m_LocalPosition.y
