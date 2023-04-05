@@ -66,7 +66,7 @@ public class Player : MonoBehaviour
         else if (other.CompareTag("Med")){
             _audioSource.PlayOneShot(pickupSound);
             Destroy(other.gameObject);
-            _gameManager.incrLife(10);
+            _gameManager.incrLife(5);
         }
         else if (other.gameObject.CompareTag("Goal"))
         {

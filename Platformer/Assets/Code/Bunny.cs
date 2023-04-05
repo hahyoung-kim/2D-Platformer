@@ -27,7 +27,6 @@ public class Bunny : MonoBehaviour
         {
             transform.localScale *= new Vector2(-1,1);
         }
-        print(Vector3.Distance(player.transform.position, transform.position));
         if(_gameManager.GetLives() > 0 && Vector3.Distance(player.transform.position, transform.position) < 20){
             Vector3 displacement = player.transform.position -transform.position;
             displacement = displacement.normalized;
