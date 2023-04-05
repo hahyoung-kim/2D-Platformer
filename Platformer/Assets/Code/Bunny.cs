@@ -23,15 +23,17 @@ public class Bunny : MonoBehaviour
     {
         float xSpeed = Input.GetAxis("Horizontal") * speed;
         float xScale = transform.localScale.x;
-        if (_gameManager.GetLives() > 0 && (xScale > 0 && player.transform.position.x > transform.position.x) || (player.transform.position.x < transform.position.x && xScale < 1))
-        {
-            transform.localScale *= new Vector2(-1,1);
-        }
-        if(_gameManager.GetLives() > 0 && Vector3.Distance(player.transform.position, transform.position) < 20){
-            Vector3 displacement = player.transform.position -transform.position;
-            displacement = displacement.normalized;
-            if (Vector2.Distance (player.transform.position, transform.position) > 1.0f) {
-                transform.position += (displacement * speed * Time.deltaTime);
+        if (_gameManager.GetLives() > 0) {
+            if ((xScale > 0 && player.transform.position.x > transform.position.x) || (player.transform.position.x < transform.position.x && xScale < 1))
+            {
+                transform.localScale *= new Vector2(-1,1);
+            }
+            if(Vector3.Distance(player.transform.position, transform.position) < 20){
+                Vector3 displacement = player.transform.position -transform.position;
+                displacement = displacement.normalized;
+                if (Vector2.Distance (player.transform.position, transform.position) > 1.0f) {
+                    transform.position += (displacement * speed * Time.deltaTime);
+                }
             }
         }
         //_animator.SetFloat("Speed", Mathf.Abs(xSpeed));
