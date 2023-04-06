@@ -57,14 +57,14 @@ public class GameManager : MonoBehaviour
         if (lives<=0){
             StartCoroutine(PlayerDeath());
         }
-        ReduceHealthText("-" + lostLife);
+        ReduceHealthText("-" + lostLife, "r");
 
     }
 
     public void incrLife(int add){
         lives += add;
         livesUI.text = "Lives: " + lives;
-        ReduceHealthText("+" + add);
+        ReduceHealthText("+" + add, "g");
     }
 
     public void incrWood() {
@@ -91,8 +91,13 @@ public class GameManager : MonoBehaviour
         return lives;
     }
 
-    public void ReduceHealthText(string text){
+    public void ReduceHealthText(string text, string color){
         reduceHealthUI.text = text;
+        if (color == "g") {
+            reduceHealthUI.color = Color.green;
+        } else {
+            reduceHealthUI.color = Color.red;
+        }
         reduceHealthUI.gameObject.SetActive(true);
         Invoke("SetInactive", .5f);
     }
